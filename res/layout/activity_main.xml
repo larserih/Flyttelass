@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0" >
+
+    <ImageButton 
+        android:contentDescription="legg til"
+        android:id="@+id/leggTil"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/ic_note_add_black_24dp"
+        android:fontFamily="sans-serif-thin"
+		android:drawablePadding="-20dp"/>
+    <ImageButton 
+        android:contentDescription="slett alle"
+        android:id="@+id/slettAlle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/ic_delete_black_24dp"
+        android:fontFamily="sans-serif-thin"
+		android:drawablePadding="-20dp"/>
+    <EditText 
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leggTil"
+        android:hint="Søk her"
+        android:fontFamily="sans-serif"        
+        />
+    <TextView 
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:text="NR"
+        android:fontFamily="sans-serif"
+        android:gravity="left"/>
+    <TextView 
+        android:id="@+id/info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:text="INNHOLD"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"/>
+    <TextView 
+        android:id="@+id/info3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:text="STED"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentRight="true"/>
+    <View
+             android:layout_width="fill_parent"
+             android:layout_height="2dp"
+             android:background="#c0c0c0"
+             android:layout_below="@+id/info"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info"
+        android:layout_above="@+id/antall" />
+    
+    <TextView 
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Listen er tom. Legg til esker øverst til høyre"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:gravity="center" />
+    
+    <View
+             android:layout_width="fill_parent"
+             android:layout_height="2dp"
+             android:background="#c0c0c0"
+             android:layout_above="@+id/antall"/>
+    
+    <TextView 
+        android:id="@+id/antall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

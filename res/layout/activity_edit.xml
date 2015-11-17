@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+         <EditText
+            android:id="@+id/editNummer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            android:labelFor="@+id/editNummer"
+            android:width="200dp" />
+
+         <EditText
+            android:id="@+id/editInnhold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/editNummer"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="8"
+            android:maxLength="150"
+            android:labelFor="@+id/editInnhold"
+            android:width="200dp" />
+         
+		<EditText
+             android:id="@+id/editSted"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="25dp"
+            android:layout_below="@+id/editInnhold"
+            android:layout_centerHorizontal="true"
+             android:ems="10"
+             android:inputType="textMultiLine|textCapSentences"
+             android:maxLines="2"
+             android:maxLength="30"
+             android:labelFor="@+id/editSted"
+             android:width="200dp" />
+		
+		<Button
+             android:id="@+id/edit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:background="@color/green"
+             android:fontFamily="sans-serif-thin"
+             android:text="Lagre" />
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c0c0c0" >
+    
+    <EditText
+            android:id="@+id/nummerfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Nummer på esken"
+            android:ems="10"
+            android:inputType="number"
+            android:labelFor="@+id/nummerfield"
+            android:maxLength="3"
+            android:width="200dp" />
+        
+         <EditText
+            android:id="@+id/innholdfield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/nummerfield"
+            android:layout_centerHorizontal="true"
+            android:hint="Hva inneholder esken"
+            android:ems="10"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLines="8"
+            android:maxLength="150"
+            android:labelFor="@+id/innholdfield"
+            android:width="200dp" />
+
+         <EditText
+             android:id="@+id/stedfield"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="25dp"
+             android:layout_below="@+id/innholdfield"
+             android:layout_centerHorizontal="true"
+             android:hint="Hvor er esken lagret"
+             android:ems="10"
+             android:inputType="textMultiLine|textCapSentences"
+             android:maxLines="2"
+             android:maxLength="30"
+             android:labelFor="@+id/numberfield"
+             android:width="200dp" />
+         
+         <ImageButton
+        android:id="@+id/save"
+        android:contentDescription="lagre boks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-thin"
+        android:background="@drawable/ic_done_black_24dp" />
+
+         <ImageView
+             android:id="@+id/approved1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/nummerfield"
+             android:layout_toRightOf="@+id/nummerfield"
+             android:src="@drawable/ic_check_circle_black_24dp" />
+
+         <ImageView
+             android:id="@+id/approved2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/innholdfield"
+             android:layout_toRightOf="@+id/innholdfield"
+             android:src="@drawable/ic_check_circle_black_24dp"/>
+
+         <ImageView
+             android:id="@+id/approved3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/approved2"
+             android:layout_alignTop="@+id/stedfield"
+             android:src="@drawable/ic_check_circle_black_24dp"/>
+         
+         <ImageView
+             android:id="@+id/failed1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/nummerfield"
+             android:layout_toRightOf="@+id/nummerfield"
+             android:src="@drawable/ic_highlight_off_black_24dp" />
+
+         <ImageView
+             android:id="@+id/failed2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/innholdfield"
+             android:layout_toRightOf="@+id/innholdfield"
+             android:src="@drawable/ic_highlight_off_black_24dp"/>
+
+         <ImageView
+             android:id="@+id/failed3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/stedfield"
+             android:layout_toRightOf="@+id/stedfield"
+             android:src="@drawable/ic_highlight_off_black_24dp"/>
+
+</RelativeLayout>
